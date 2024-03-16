@@ -45,6 +45,6 @@ app.use("/user", require("./src/routes/user.router"));
 app.use("/blog", require("./src/routes/blog.router"));
 
 app.use(require("./src/middlewares/errorHandler"));
-app.listen(PORT, HOST, () => console.log("Server is running."));
+app.listen(PORT, HOST, () => console.log(`Server is running on port ${PORT}.`));
 
 // require("./src/sync")();
